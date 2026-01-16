@@ -70,7 +70,7 @@ def make_image_natural(image):
             image = image.astype(np.uint8)
     
     # Apply bilateral filtering to smooth discretization artifacts while preserving edges
-    enhanced = cv2.bilateralFilter(image, d=9, sigmaColor=25, sigmaSpace=25)
+    enhanced = cv2.bilateralFilter(image, d=9, sigmaColor=75, sigmaSpace=75)
     
     # Clip to valid range and convert back to uint8
     enhanced = np.clip(enhanced, 0, 255)

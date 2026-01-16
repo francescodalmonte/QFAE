@@ -77,7 +77,14 @@ python run_test.py --config configs/brain.ini
 ```
 
 ### Pre-trained Models
-We provide pre-trained checkpoints for our best models. You can download them from our [Hugging Face repository](https://huggingface.co/ebayar/QFAE-checkpoints) and place them in the `checkpoints/` folder.
+We provide pre-trained checkpoints for our best models. You can download them from our [Hugging Face repository](https://huggingface.co/ebayar/QFAE-checkpoints) and place them in `results/{Dataset}_AD/checkpoints/` (e.g., `results/Brain_AD/checkpoints/last_ckpt.pth`).
+
+| Dataset | AUROC | Checkpoint |
+|---------|-------|------------|
+| Brain (BraTS2021) | 94.1% | [brain/last_ckpt.pth](https://huggingface.co/ebayar/QFAE-checkpoints/resolve/main/brain/last_ckpt.pth) |
+| Chest (RSNA) | 84.2% | [chest/last_ckpt.pth](https://huggingface.co/ebayar/QFAE-checkpoints/resolve/main/chest/last_ckpt.pth) |
+| Liver | 68.4% | [liver/last_ckpt.pth](https://huggingface.co/ebayar/QFAE-checkpoints/resolve/main/liver/last_ckpt.pth) |
+| RESC | 91.9% | [retina/last_ckpt.pth](https://huggingface.co/ebayar/QFAE-checkpoints/resolve/main/retina/last_ckpt.pth) |
 
 ## License
 
